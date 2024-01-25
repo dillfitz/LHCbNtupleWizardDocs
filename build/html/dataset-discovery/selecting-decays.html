@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selecting Decays &mdash; Ntuple Wizard Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/wizard.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/panels.js?v=0f4bdeea"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Choosing a Stripping Line" href="stripping-lines.html" />
+    <link rel="prev" title="Dataset Discovery" href="README.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../README.html" class="icon icon-home">
+            Ntuple Wizard Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="README.html">Dataset Discovery</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Selecting Decays</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#filtering-decays">Filtering Decays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stripping-lines.html">Choosing a Stripping Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bookkeeping-path.html">Choosing a dataset to process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ntuple-configuration/README.html">Ntuple Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/ntuple-creation.html">Creating an Ntuple Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/nodetree.html">Configuring the Node Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/tupletools.html">Tuple Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/submitting-requests.html">Submitting Requests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring-output/README.html">Monitoring and Retrieving Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../monitoring-output/monitoring-output.html">Monitoring Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../monitoring-output/retrieving-output.html">Retrieving Output</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../README.html">Ntuple Wizard Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../README.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="README.html">Dataset Discovery</a></li>
+      <li class="breadcrumb-item active">Selecting Decays</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/lhcb/starterkit-lessons/blob/master/source/dataset-discovery/selecting-decays.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="selecting-decays">
+<h1>Selecting Decays<a class="headerlink" href="#selecting-decays" title="Link to this heading"></a></h1>
+<p>To begin your data query, you should first choose a decay or other physics object to analyze from the list of available selections. This process can be initiated by clicking the green + button, as shown in the figure below.</p>
+<p><img alt="Launcing the decay list" src="../_images/launch_select_decays.png" /></p>
+<p>This will render the list of available decays and other physics objects that can be selected for analysis. Each entry in the list corresponds to an available selection, ordered by the corresponding physics process.  Additional inforamtion is displayed in capsule shaped badges on each list item that the user can mouseover for more details, such as the available “stripping lines” (algorithms used to identify candidates from a particular type of physics process), and “tags” used to identify broader categories of physics processes. An example of this list can be seen below.</p>
+<p><img alt="Decay List No Selections" src="../_images/decay_search_empty.png" /></p>
+<section id="filtering-decays">
+<h2>Filtering Decays<a class="headerlink" href="#filtering-decays" title="Link to this heading"></a></h2>
+<p>The list of available physics processes is accompanied by many search and filtering functionalities. These come in the form of search fields, many of which have an accompanying drop down menu on the left side to select how the filtering is handled based on the input search fields. In partciular, the list can be filtered by the following:</p>
+<div class="panel panel-callout docutils container">
+<div class="panel-header open docutils container">
+<p id="filtering-options"><i class="fa fa-info-circle"></i> Filtering options</p>
+</div>
+<div class="panel-body docutils container">
+<ul class="simple">
+<li><p><strong>The top level decaying particle:</strong> <em><strong>Head</strong></em></p>
+<ul>
+<li><p>Exact particles or categories of particles can be provided, depending on the drop down menu option.</p></li>
+<li><p>Antiparticles of the input particle can be included or excluded from the filtering procedure depending on the selected drop down menu option.</p></li>
+</ul>
+</li>
+<li><p><strong>Particles contained in the decay (multiple inputs accepted):</strong> <em><strong>Contains</strong></em></p>
+<ul>
+<li><p>The option to filter by processes containing all of the input particles, any of the input particles, or none of the input particles can be provided based on the selected drop down menu option.</p></li>
+<li><p>Antiparticles of the input particle can be included or excluded from the filtering procedure depending on the selected drop down menu option.</p></li>
+</ul>
+</li>
+<li><p><strong>Labels associated with particular list items (multiple inputs accepted):</strong> <em><strong>Tags</strong></em></p>
+<ul>
+<li><p>The option to filter by list items corresponding to all of the input tags, any of the input tags, or none of the input tags can be provided based on the selected drop down menu option.</p></li>
+</ul>
+</li>
+<li><p><strong>Name of stripping line associated with a particular list item:</strong> <em><strong>Stripping line</strong></em></p></li>
+</ul>
+</div>
+</div>
+<p>These filtering options can be seen at the top of the figure below. Notice that the inclusion of antiparticles in <em>contains</em> option prooduces selectable items with <span class="math notranslate nohighlight">\(`\bar{D}^{0}`\)</span> particles.</p>
+<p><img alt="Filter Options Example" src="../_images/filter_options.png" /></p>
+<p>List items can be selected by simply clicking them, after which the selected list item will be highlighted, and the corresponding check box will be filled in. Multiple selections can be made from the list, with each selected list item (i.e. physics process) resulting in an Ntuple after the entire procedure is complete. The checkbox at the top right corner can be checked at any time to filter the list to show only physics processes the user has selected, and unchecked to return the list to its previous state. Once all selections are made the green “Select” button at the bottom of the page can be clicked to navigate back to the main page.</p>
+<p>TODO!!! LIST THE DEFAULT FILTERING OPTIONS (FOR TAGS).</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="README.html" class="btn btn-neutral float-left" title="Dataset Discovery" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stripping-lines.html" class="btn btn-neutral float-right" title="Choosing a Stripping Line" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, LHCb.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

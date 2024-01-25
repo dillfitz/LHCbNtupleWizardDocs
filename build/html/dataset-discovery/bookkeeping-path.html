@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choosing a dataset to process &mdash; Ntuple Wizard Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/wizard.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/panels.js?v=0f4bdeea"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Ntuple Configuration" href="../ntuple-configuration/README.html" />
+    <link rel="prev" title="Choosing a Stripping Line" href="stripping-lines.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../README.html" class="icon icon-home">
+            Ntuple Wizard Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="README.html">Dataset Discovery</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="selecting-decays.html">Selecting Decays</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="selecting-decays.html#filtering-decays">Filtering Decays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stripping-lines.html">Choosing a Stripping Line</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Choosing a dataset to process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ntuple-configuration/README.html">Ntuple Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/ntuple-creation.html">Creating an Ntuple Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/nodetree.html">Configuring the Node Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/tupletools.html">Tuple Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ntuple-configuration/submitting-requests.html">Submitting Requests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring-output/README.html">Monitoring and Retrieving Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../monitoring-output/monitoring-output.html">Monitoring Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../monitoring-output/retrieving-output.html">Retrieving Output</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../README.html">Ntuple Wizard Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../README.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="README.html">Dataset Discovery</a></li>
+      <li class="breadcrumb-item active">Choosing a dataset to process</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/lhcb/starterkit-lessons/blob/master/source/dataset-discovery/bookkeeping-path.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="choosing-a-dataset-to-process">
+<h1>Choosing a dataset to process<a class="headerlink" href="#choosing-a-dataset-to-process" title="Link to this heading"></a></h1>
+<p>After a stripping line has been selected, the final drop down menu on the main page labeled “Bookkeeping path” becomes available for selections to be made. This will specify which dataset(s) are to be processed from the internal LHCb bookkeeping system.</p>
+<p><img alt="Bookkeeping path" src="../_images/bookkeeping_path.png" /></p>
+<p>The datasets are catagorized by running year, magnet polarity, and the version number of the corresponding stripping campaign, all rendered as capsule shaped badges on the Bookkeeping path menu items. To process all available data for a specific running year, be sure to choose both the “MagUp” and “MagDown” samples. Note that the name of the menu items correspond to the name of the data stream in the LHCb bookkeeping system.</p>
+<div class="panel panel-discussion docutils container">
+<div class="panel-header docutils container">
+<p id="what-if-there-are-more-than-2-options-for-a-particular-running-year?"><i class="fa fa-bell"></i> What if there are more than 2 options for a particular running year?</p>
+</div>
+<div class="panel-body docutils container">
+<p>If the same stripping line was generated during multiple stripping campaigns corersponding to a given year of data taking, options corresponding to each stripping version will be rendered in the dataset selection drop down menu. Only one dataset should be chosen for each magnet polarity during a given running year. In cases where there are multiple options, it is recommended to choose the option corresponding to the latest stripping version. Details about stripping version names can be found <a class="reference external" href="http://lhcbdoc.web.cern.ch/lhcbdoc/stripping/">here</a>.</p>
+</div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="stripping-lines.html" class="btn btn-neutral float-left" title="Choosing a Stripping Line" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ntuple-configuration/README.html" class="btn btn-neutral float-right" title="Ntuple Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, LHCb.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
